@@ -51,12 +51,30 @@ class User:
         self.email = email
 
     def get_email(self) -> str:
+        """
+        Get the email of the user.
+
+        Returns:
+            str: The email of the user.
+        """
         return self.email
 
     def set_role(self, role_name: str):
+        """
+        Set the role of the user.
+
+        Args:
+            role_name (str): The role name of the user.
+        """
         self.role = Role(role_name)
 
     def get_role(self) -> Role:
+        """
+        Get the role of the user.
+
+        Returns:
+            Role: The role of the user.
+        """
         return self.role
 
 
